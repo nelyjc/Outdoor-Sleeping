@@ -3,6 +3,7 @@ import ProductData from "./ProductData.mjs";
 
 const dataSource = new ProductData("tents");
 
+<<<<<<< Updated upstream
 function addProductToCart(product) {
   setLocalStorage("so-cart", product);
 }
@@ -16,3 +17,7 @@ async function addToCartHandler(e) {
 document
   .getElementById("addToCart")
   .addEventListener("click", addToCartHandler);
+=======
+const product = new ProductDetails(productID, dataSource);
+product.init();
+>>>>>>> Stashed changes
